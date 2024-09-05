@@ -11,6 +11,7 @@ btnGuardar.addEventListener("click", function(event){
     if(txtNombre.value.length<3){
         alertValidaciones.innerHTML="Existe un error";
         alertValidaciones.style.display="block";
+        return false;
         }// if length <3
 
         localStorage.setItem("nombre", txtNombre.value);
